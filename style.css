@@ -1,0 +1,765 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+:root{
+    --font-color:#9c9c9c;
+    --heading-color: #2c353d;
+    --primar-color: #efbb20;
+    --navbar-color: #2c353d;
+   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    transition: .2s;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    text-decoration: none;
+    font-family: 'Noto Sans Mono', monospace;
+
+
+}
+
+html{
+
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+
+header {
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    z-index: 2000;
+    width: 100%;
+    height: 130px;
+    border: 2px solid var(--primar-color);
+}
+
+header .logo img {
+    margin-left: -50px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+nav a{
+    margin-left: 1.5rem;
+    padding: 1rem;
+    color: white;
+    font-size: 1.5rem;
+    position: relative;
+}
+nav a:hover{
+    color: var(--primar-color);
+}
+
+nav a::after{
+    content: "";
+    background-color: var(--primar-color);
+    width: 0;
+    transition: 1s;
+    height: 3px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+
+}
+
+nav a:hover::after
+{
+    width: 100%;
+
+}
+
+.myicons div{
+    margin-left: 1rem;
+    font-size: 2rem;
+    color: white;
+}
+
+.myicons div:hover{
+    color: var(--primar-color);
+    cursor: pointer;
+}
+
+#menu-bar
+{
+    display: none;
+    
+}
+
+.search-form{
+    width:50%;
+    position: absolute;
+    top: -100%;
+    right: 5rem;
+    padding: 0.5rem;
+
+}
+.search-form input {
+
+    width: 100%;
+    padding: 2rem;
+    border-radius: 10px;
+    outline: #efbb20;
+    border: 1px solid var(--primar-color);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px ;
+    transition: all 1s ease-in-out;
+}
+
+.search-form.active{
+    top: 100%;
+    transition: 1s;
+
+}
+.navbar.active
+{
+    right: 0;
+    transition: 1s;
+}
+
+.home{
+    padding-top: 130px;
+    position: relative;
+    height: 50%;
+}
+
+
+.mySwiper{
+    width: 100%;
+    max-height: 592px;
+    
+}
+
+.swiper-slide img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.swiper-pagination-bullet {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 12px;
+    color: #000;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+/* .sldier-button a{
+    padding: 1.2rem 2rem;
+    color: white;
+    background-color: var(--primar-color);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    transition: 1s;
+    margin: 0.5rem;
+
+
+}
+
+.slider-button a:hover{
+    background-color: white;
+    color: var(--navbar-color);
+} */
+
+.our-services{
+    padding: 2rem 7%;
+}
+
+.service-heading{
+    text-align: center;
+    padding: 2rem 0;
+    align-items: center;
+    margin-top: 130px;
+}
+.service-heading h1{
+    color:rgb(27, 27, 27);
+    font-size: 30px;
+    font-weight: 300;
+
+}
+
+.service-heading .hr{
+    width: 15%;    
+    background-color: var(--primar-color);
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+}
+
+.main-inner-services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ekran genişliğine göre 3 sütun oluştur */
+    grid-gap: 1rem;
+    
+}
+.inner-services{
+    flex: 0 0 calc(33.33% - 1rem); /* İçeriklerin genişliklerini ayarlar ve 1rem boşluk bırakır */
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 100%; /* Kartların genişliğini ayarlar */
+    background-color: #f9f9f9; /* Kart arka plan rengi */
+    border-radius: 8px; /* Kart kenar yuvarlaklığı */
+    overflow: hidden; /* İçeriklerin kartın sınırları içinde kalmasını sağlar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Kartın gölgesi */
+    margin-bottom: 20px; 
+}
+.inner-services .services-images img {
+    width: 100%;
+    
+
+}
+
+.service-inner-content{
+    padding: 2rem 0;
+    padding: 20px;
+}
+.service-inner-content h2{
+    color: var(--font-color);
+    margin: 1rem 0;
+    font-size: 2rem;
+    font-weight: 300;
+}
+.service-inner-content  p{
+    color: var(--font-color);
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+.why-us{
+    
+    background-color: #2c353d;
+    width: 100%;
+    padding: 4rem 5%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+}
+.why-us-heading{
+    text-align: center;
+
+}
+
+.why-us-heading h1{
+    font-size: 35px;
+    color: rgb(255, 251, 251);
+    font-weight: 500;
+}
+
+.main-inner-us{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+.main-inner{
+    flex: 0 0 calc(33% - 1rem);
+    padding: 2rem 1rem;
+    border: 1px solid var(--primar-color);
+
+}
+.icon-text-main{
+    display: flex;
+    align-items: center;
+    gap: 1rem;   
+    
+}
+
+.inner-content{
+    padding: 0 0.5rem;
+
+}
+
+.inner-icon i{
+    color:white;
+    font-size: 22px;
+    padding: 2rem;
+    border: 1px solid rgb(255, 251, 251);
+    border-radius: 100%;
+}
+.inner-content-text h2{
+    color:white;
+    font-size: 22px;
+    padding: 1rem 0;
+    font-weight: 300;
+}
+.inner-content-text p{
+    color: white;
+    font-size: 14px;
+}
+
+
+
+.footer {
+    padding: 4rem 7%;
+    width: 100%;
+    background-color: rgb(27, 27, 27); 
+    border: 2px solid var(--primar-color);
+}
+
+.main-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-inner-content {
+    flex: 1 1 calc(33.33% - 1rem); /* Öğelerin genişliğini eşit olarak paylaştırmak */
+    max-width: calc(33.33% - 1rem); /* Öğelerin maksimum genişliğini ayarlamak */
+    padding: 1rem;
+    color: white; /* Yazı rengini beyaz yapmak */
+}
+
+.footer-inner-content h2 {
+    font-size: 20px;
+    padding: 1.5rem 0;
+    font-weight: bold;
+}
+
+.footer-inner-content p {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+.footer-inner-content a {
+    font-size: 1.5rem;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    
+}
+
+.about-card {
+    max-width: 400px;
+    border: 1px solid var(--primar-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-top: 150px;
+    background-color: #000;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+}
+
+.about-card img {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    padding: 1rem;
+}
+.content p{
+    font-size: 15px;
+    color: white;
+}
+.content h2 {
+    color: white;
+    font-size: 22px;
+}
+
+.Kurucu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.kurucu-card {
+    max-width: 400px;
+    background-color: #000000;
+    border: 1px solid var(--primar-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.kurucu-card:hover {
+    transform: translateY(-5px);
+}
+
+.kurucu-card img {
+    width: 100%;
+    height: auto;
+}
+
+.content-kur {
+    padding: 24px;
+}
+
+.content-kur h2 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.content-kur h3{
+    color: white;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.content-kur p {
+    color: white;
+    font-size: 16px;
+    line-height: 1.5;
+}
+.instagram-btn {
+    display: inline-flex; /* Düğmeyi iç içe geçmiş hale getir */
+    align-items: center; /* İçerikleri dikeyde hizala */
+    justify-content: center; /* İçerikleri yatayda hizala */
+    padding: 8px; /* Düğme dolgusu */
+    background-color: #000000; /* Instagram rengi */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.instagram-btn:hover {
+    background-color: #ffffff; /* Hover rengi */
+}
+
+.instagram-btn img {
+    padding: 0;
+    width: 30px; /* İkonun genişliği */
+    height: 30px; /* İkonun yüksekliği */
+    margin-right: 8px; /* İkon ile metin arasında boşluk bırak */
+    transition: transform 0.3s ease;
+    border-radius: 14px;
+   
+    
+}
+
+.instagram-btn:hover img {
+    transform: scale(1.1); /* Hover etkisi */
+}
+
+.our-featured{
+    padding: 2rem 7%;
+    padding-top: 130px;
+}
+.feture-heading{
+    text-align: center;
+    padding: 2rem 0;
+}
+.feture-heading h1{
+    font-size: 35px;
+    font-weight: 500;
+    color: var(--heading-color);
+}
+.feture-heading h1 span{
+    color: var(--primar-color);
+}
+.main-feautred{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ekran genişliğine göre 3 sütun oluştur */
+    grid-gap: 1rem;
+}
+.inner-featred{
+    
+    flex: 0 0 calc(33.33% - 1rem); /* İçeriklerin genişliklerini ayarlar ve 1rem boşluk bırakır */
+    padding: 1rem;
+    box-sizing: border-box;
+    width: 100%; /* Kartların genişliğini ayarlar */
+    background-color: #f9f9f9; /* Kart arka plan rengi */
+    border-radius: 8px; /* Kart kenar yuvarlaklığı */
+    overflow: hidden; /* İçeriklerin kartın sınırları içinde kalmasını sağlar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Kartın gölgesi */
+    margin-bottom: 20px; 
+}
+
+.feature-image img{
+    width: 100%;
+    
+}
+
+.close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #000000;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10000;
+    visibility: hidden;
+
+}
+
+.inner-featred.fullscreen .feature-image img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: contain;
+    z-index: 9999;
+}
+
+.inner-featred.fullscreen .feature-image .close-btn {
+    position: fixed;
+    top: 0px;
+    right: 170px;
+    color: #ff0000;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10000;
+    visibility: visible;
+    
+}
+.iletisim-container{
+    background-color: var(--navbar-color);
+    padding-bottom: 20px;
+}
+.map {
+    display: flex;
+    flex-direction: column; /* İçerikleri dikey yönde sırala */
+    align-items: center; /* İçerikleri yatayda merkezle */
+    padding-top: 130px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+
+
+.contact-info,
+.contact-form {
+    
+    width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Gölgelendirme efekti */
+    height: auto;
+}
+
+.contact-info {
+    background-color: #f9f9f9;
+    float: right;
+    margin-right: 10%;
+}
+
+.contact-info h2 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 21px;
+}
+
+.contact-info p {
+    margin: 0;
+    color: #555;
+    font-size: 19px;
+}
+
+.contact-info ul {
+    padding: 0;
+    display: flex; /* Liste öğelerini yan yana sırala */
+    
+}
+
+.contact-info ul li {
+    margin-right: 5px; /* Öğeler arasında boşluk bırak */
+    margin-bottom: 5px;
+    color: #555;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+.contact-info a {
+    color: #007bff;
+}
+
+.contact-form {
+    background-color: #f0f0f0;
+    margin-left: 10%;
+
+}
+
+.contact-form h2 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 20px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form button {
+    width: calc(100% - 16px); /* 16px padding hesaplanarak genişlik ayarlanır */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.contact-form textarea{
+    height: 60px;
+}
+
+
+
+
+
+
+
+
+@media (max-width:900px) {
+    html{
+        font-size: 55%;
+    }
+    
+    #menu-bar
+    {
+        display: initial;
+        
+    }
+    header{
+        padding: 2rem;
+    }
+
+    header .logo img {
+        margin-left: 0;
+        width: 120px;
+        border-radius: 50%;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        background-color: var(--navbar-color);
+        width: 30rem;
+        right: -100%;
+        height: 100vh;
+
+    }
+
+    .navbar a{
+        display: block;
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 1rem;
+        background-color: white;
+        color: #efbb20;
+        border: 5px solid var(--primar-color);
+    }
+    .search-form{
+        width: 100%;
+        right: 0;
+
+    }
+    .main-inner-services {
+        grid-template-columns: repeat(1, 1fr); /* Ekran küçültüldüğünde 1 sütun oluştur */
+    }
+    .main-inner {
+        flex: 1 1 50%; /* Küçük ekranlarda %50 genişlik */
+        max-width: 50%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 170px;
+    }
+
+    .about-card {
+        width: 90%; /* Örnek genişlik ayarı */
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .kurucu-card {
+        width: 90%; /* Örnek genişlik ayarı */
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .Kurucu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .our-featured {
+        padding-top: 170px; /* Sayfanın üst kısmında 100 piksel boşluk bırak */
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-feautred {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .inner-featred {
+        flex: 0 0 1;
+        width: 500px;                
+    }
+
+
+    .contact-form,
+    .contact-info{
+        margin: 0;
+        float: none;
+        width: 80%;
+        margin-left: 10%;
+        
+    }
+    .contact-form {
+        background-color: #f0f0f0;
+        
+    }
+    
+    .contact-info {
+        background-color: #f9f9f9;
+        margin-bottom: 20px; 
+    }
+
+
+
+
+
+
+}
+    
+    
+    
+    
+    
+    
