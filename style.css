@@ -148,6 +148,12 @@ nav a:hover::after
     object-fit: cover;
     
 }
+.swiper-button-next,
+.swiper-button-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(100%);
+}
 
 .swiper-pagination-bullet {
     width: 20px;
@@ -637,43 +643,89 @@ nav a:hover::after
 
 
 
+/* Genel stiller */
+
 @media (max-width:900px) {
     html{
         font-size: 55%;
     }
-    
-    #menu-bar
-    {
+
+    #menu-bar{
         display: initial;
+    }
+    header {
+        position: fixed;
+        padding: 1rem;
+        left: 0;
+        right: 0;
+        padding: 1.5rem 7%; /* Bu kısmı değiştirelim */
+        height: auto; /* Sabit yükseklik yerine otomatik yükseklik */
         
     }
-    header{
-        padding: 2rem;
+    header .logo img {
+        margin-left: -10px;
+    }
+    .home {
+        padding-top: 130px; /* Önerilen değerlerle değiştirebilirsiniz */
+        position: relative;
+        height: auto; /* Sabit yükseklik yerine otomatik yükseklik */
     }
 
-    header .logo img {
-        margin-left: 0;
-        width: 120px;
-        border-radius: 50%;
+    .mySwiper {
+        width: 100%;
+        max-height: 400px; /* Önerilen değerlerle değiştirebilirsiniz */
+        overflow: hidden; /* Slider içeriğinin taşmasını engelle */
+        margin-top: -20px;
     }
-    .navbar{
+
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: auto; /* Sabit yükseklik yerine otomatik yükseklik */
+        object-fit: cover;
+    }
+
+    .swiper-wrapper {
+        display: flex; /* Slides'ları yan yana yerleştir */
+    }
+
+    .swiper-slide {
+        flex: 0 0 100%; /* Slides'ların genişliğini ayarla */
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        position: absolute;
+        top: 50%;
+        transform: translateY(100%);
+    }
+    nav{
         position: absolute;
         top: 100%;
         background-color: var(--navbar-color);
         width: 30rem;
-        right: -100%;
+        right: -3000px;
         height: 100vh;
-
     }
-
-    .navbar a{
+    nav a{
         display: block;
         border-radius: 10px;
         padding: 1rem;
         margin: 1rem;
         background-color: white;
-        color: #efbb20;
+        color: var(--primar-color);
         border: 5px solid var(--primar-color);
+    }
+    .main-inner {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 40px;
+        padding: 5rem;
+        border: 1px solid var(--primar-color);
+    }
+    .inner-content-text p{
+        color: white;
+        font-size: 16px;
     }
     .search-form{
         width: 100%;
@@ -684,15 +736,15 @@ nav a:hover::after
         grid-template-columns: repeat(1, 1fr); /* Ekran küçültüldüğünde 1 sütun oluştur */
     }
     .main-inner {
-        flex: 1 1 50%; /* Küçük ekranlarda %50 genişlik */
-        max-width: 50%;
+        flex: 1 1 100%; /* Küçük ekranlarda %50 genişlik */
+        max-width: 100%;
     }
 
     .container {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 170px;
+        padding-top: 140px;
     }
 
     .about-card {
@@ -704,13 +756,15 @@ nav a:hover::after
     .kurucu-card {
         width: 90%; /* Örnek genişlik ayarı */
         margin-top: 10px;
-        margin-bottom: 10px;
+        
     }
 
     .Kurucu {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
     }
 
     .our-featured {
@@ -729,7 +783,7 @@ nav a:hover::after
 
     .inner-featred {
         flex: 0 0 1;
-        width: 500px;                
+        width: 380px;                
     }
 
 
@@ -751,15 +805,48 @@ nav a:hover::after
         margin-bottom: 20px; 
     }
 
+    .close-btn{
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        color: #000000;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 10000;
+        visibility: hidden;
+    
+    }
+    
+    .inner-featred.fullscreen .feature-image img {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        object-fit: contain;
+        z-index: 9999;
+    }
+    
 
-
+    .inner-featred.fullscreen .feature-image .close-btn {
+        position: fixed;
+        top: 300px;
+        right: 10px;
+        color: #ff0000;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 10000;
+        visibility: visible;
+        
+    }
+    
+    
 
 
 
 }
-    
-    
-    
-    
-    
+  
+
+  
+
     
