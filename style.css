@@ -38,34 +38,34 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
+    background-color: #383e42;
     z-index: 2000;
     width: 100%;
     height: 130px;
-    border: 4px solid var(--font-color);
+    border: 2px solid rgb(0, 90, 20);
     
 }
 
 header .logo img {
     margin-left: -50px;
-    width: 180px;
+    width: 240px;
     border-radius: 50%;
 }
 
 nav a{
     margin-left: 1.5rem;
     padding: 1rem;
-    color: black;
+    color: whitesmoke;
     font-size: 1.5rem;
     position: relative;
 }
 nav a:hover{
-    color: var(--font-color);
+    color: rgb(0, 90, 20);
 }
 
 nav a::after{
     content: "";
-    background-color: var(--font-color);
+    background-color: rgb(0, 90, 20);
     width: 0;
     transition: 1s;
     height: 3px;
@@ -85,11 +85,11 @@ nav a:hover::after
 .myicons div{
     margin-left: 1rem;
     font-size: 2rem;
-    color: black;
+    color: whitesmoke;
 }
 
 .myicons div:hover{
-    color: var(--font-color);
+    color: rgb(0, 90, 20);
     cursor: pointer;
 }
 
@@ -112,7 +112,7 @@ nav a:hover::after
     width: 100%;
     padding: 2rem;
     border-radius: 10px;
-    outline: #333;
+    outline: rgb(0, 90, 20);
     border: 1px solid var(--font-color);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px ;
     transition: all 0.5s ease-in-out;
@@ -196,7 +196,7 @@ nav a:hover::after
     margin-top: 130px;
 }
 .service-heading h1{
-    color:rgb(27, 27, 27);
+    color:rgb(0, 90, 20);
     font-size: 30px;
     font-weight: 300;
 
@@ -204,7 +204,7 @@ nav a:hover::after
 
 .service-heading .hr{
     width: 15%;    
-    background-color: var(--primar-color);
+    background-color: rgb(0, 90, 20);
     height: 2px;
     margin: 0 auto;
     margin-top: 0.5rem;
@@ -226,7 +226,7 @@ nav a:hover::after
     overflow: hidden; /* İçeriklerin kartın sınırları içinde kalmasını sağlar */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Kartın gölgesi */
     margin-bottom: 20px; 
-    border: 3px solid var(--font-color);
+    border: 3px solid rgb(0, 90, 20);
 }
 .inner-services .services-images img {
     width: 100%;
@@ -239,13 +239,13 @@ nav a:hover::after
     padding: 20px;
 }
 .service-inner-content h2{
-    color: var(--font-color);
+    color: rgb(0, 90, 20);
     margin: 1rem 0;
     font-size: 2rem;
     font-weight: 300;
 }
 .service-inner-content  p{
-    color: var(--font-color);
+    color: rgb(0, 90, 20);
     margin: 1rem 0;
     font-size: 1.5rem;
     font-weight: 200;
@@ -267,7 +267,7 @@ nav a:hover::after
 
 .why-us-heading h1{
     font-size: 35px;
-    color: #333;
+    color: rgb(0, 90, 20);
     font-weight: 500;
 }
 
@@ -281,7 +281,7 @@ nav a:hover::after
 .main-inner{
     flex: 0 0 calc(33% - 1rem);
     padding: 2rem 1rem;
-    border: 3px solid var(--font-color);
+    border: 3px solid rgb(0, 90, 20);
 
 }
 .icon-text-main{
@@ -297,20 +297,20 @@ nav a:hover::after
 }
 
 .inner-icon i{
-    color:#333;
+    color:rgb(0, 90, 20);
     font-size: 22px;
     padding: 2rem;
-    border: 1px solid #333;
+    border: 1px solid rgb(0, 90, 20);
     border-radius: 100%;
 }
 .inner-content-text h2{
-    color:#333;
+    color:rgb(0, 90, 20);
     font-size: 22px;
     padding: 1rem 0;
     font-weight: 300;
 }
 .inner-content-text p{
-    color: #333;
+    color: rgb(0, 90, 20);
     font-size: 14px;
 }
 
@@ -319,8 +319,8 @@ nav a:hover::after
 .footer {
     padding: 1rem 7%;
     width: 100%;
-    background-color: white; 
-    border: 3px solid var(--font-color);
+    background-color: #383e42; 
+    border: 2px solid rgb(0, 90, 20);
 }
 
 .main-footer {
@@ -333,7 +333,7 @@ nav a:hover::after
     flex: 1 1 calc(33.33% - 1rem); /* Öğelerin genişliğini eşit olarak paylaştırmak */
     max-width: calc(33.33% - 1rem); /* Öğelerin maksimum genişliğini ayarlamak */
     padding: 1rem;
-    color: black; /* Yazı rengini beyaz yapmak */
+    color: whitesmoke; /* Yazı rengini beyaz yapmak */
 }
 
 .footer-inner-content h2 {
@@ -361,7 +361,7 @@ nav a:hover::after
 
 .about-card {
     max-width: 400px;
-    border: 3px solid var(--font-color);
+    border: 3px solid rgb(0, 90, 20);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -385,10 +385,10 @@ nav a:hover::after
 }
 .content p{
     font-size: 15px;
-    color: var(--font-color);
+    color: rgb(0, 90, 20);
 }
 .content h2 {
-    color: var(--font-color);
+    color: rgb(0, 90, 20);
     font-size: 22px;
 }
 
@@ -401,7 +401,7 @@ nav a:hover::after
 .kurucu-card {
     max-width: 400px;
     background-color: whitesmoke;
-    border: 3px solid var(--font-color);
+    border: 3px solid rgb(0, 90, 20);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -425,18 +425,18 @@ nav a:hover::after
 }
 
 .content-kur h2 {
-    color: var(--font-color);
+    color: rgb(0, 90, 20);
     font-size: 22px;
     margin-bottom: 10px;
 }
 .content-kur h3{
-    color: var(--font-color);
+    color: rgb(0, 90, 20);
     font-size: 16px;
     margin-bottom: 10px;
 }
 
 .content-kur p {
-    color: var(--font-color);
+    color: rgb(0, 90, 20);
     font-size: 16px;
     line-height: 1.5;
 }
@@ -480,10 +480,14 @@ nav a:hover::after
 .feture-heading h1{
     font-size: 35px;
     font-weight: 500;
-    color: var(--heading-color);
+    color: rgb(0, 90, 20);
 }
 .feture-heading h1 span{
-    color: var(--primar-color);
+    color: rgb(0, 90, 20);
+}
+.feature-image p{
+    color: rgb(0, 90, 20);
+    font-size: 15px;
 }
 .main-feautred{
     display: grid;
@@ -496,11 +500,12 @@ nav a:hover::after
     padding: 1rem;
     box-sizing: border-box;
     width: 100%; /* Kartların genişliğini ayarlar */
-    background-color: #f9f9f9; /* Kart arka plan rengi */
-    border-radius: 8px; /* Kart kenar yuvarlaklığı */
+    background-color: whitesmoke; /* Kart arka plan rengi */
+    border-radius: 15px; /* Kart kenar yuvarlaklığı */
     overflow: hidden; /* İçeriklerin kartın sınırları içinde kalmasını sağlar */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Kartın gölgesi */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); /* Kartın gölgesi */
     margin-bottom: 20px; 
+    border: 3px solid  rgb(0, 90, 20);
 }
 
 .feature-image img{
@@ -542,7 +547,7 @@ nav a:hover::after
     
 }
 .iletisim-container{
-    background-color: var(--navbar-color);
+    background-color: whitesmoke;
     padding-bottom: 20px;
 }
 .map {
@@ -561,26 +566,28 @@ nav a:hover::after
     
     width: 500px;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Gölgelendirme efekti */
+    border-radius: 15px;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.1); /* Gölgelendirme efekti */
     height: auto;
+    border: 3px solid   rgb(0, 90, 20);
 }
 
 .contact-info {
     background-color: #f9f9f9;
     float: right;
     margin-right: 10%;
+
 }
 
 .contact-info h2 {
     margin-bottom: 10px;
-    color: #333;
+    color: #383e42;
     font-size: 21px;
 }
 
 .contact-info p {
     margin: 0;
-    color: #555;
+    color: #383e42;
     font-size: 19px;
 }
 
@@ -705,7 +712,7 @@ nav a:hover::after
     nav{
         position: absolute;
         top: 100%;
-        background-color: var(--font-color);
+        background-color: #383e42;
         width: 30rem;
         right: -3000px;
         height: 100vh;
@@ -717,22 +724,23 @@ nav a:hover::after
         margin: 1rem;
         background-color: white;
         color: var(--heading-color);
-        border: 3px solid var(--heading-color);
+        border: 3px solid  rgb(0, 90, 20);
     }
     .main-inner {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 40px;
         padding: 5rem;
-        border: 3px solid var(--font-color);
+        border: 3px solid  rgb(0, 90, 20);
     }
     .inner-content-text p{
-        color: #333;
+        color:  rgb(0, 90, 20);
         font-size: 16px;
     }
     .search-form{
         width: 100%;
         right: 0;
+        border: 2px solid  rgb(0, 90, 20);
 
     }
     .main-inner-services {
