@@ -58,6 +58,7 @@ nav a{
     color: whitesmoke;
     font-size: 1.5rem;
     position: relative;
+    font-family: Arial, Helvetica, sans-serif;
 }
 nav a:hover{
     color: rgb(0, 90, 20);
@@ -199,6 +200,7 @@ nav a:hover::after
     color:rgb(0, 90, 20);
     font-size: 30px;
     font-weight: 300;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
 
 }
 
@@ -243,12 +245,14 @@ nav a:hover::after
     margin: 1rem 0;
     font-size: 2rem;
     font-weight: 300;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .service-inner-content  p{
     color: rgb(0, 90, 20);
     margin: 1rem 0;
     font-size: 1.5rem;
     font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .why-us{
     
@@ -273,6 +277,7 @@ nav a:hover::after
     font-size: 35px;
     color: rgb(0, 90, 20);
     font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .main-inner-us{
@@ -286,8 +291,11 @@ nav a:hover::after
     flex: 0 0 calc(33% - 1rem);
     padding: 2rem 1rem;
     border: 4px ;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
+    border-radius: 25px;
+    width: 200px;
+    height: 200px;
    
     
 }
@@ -316,10 +324,12 @@ nav a:hover::after
     font-size: 22px;
     padding: 1rem 0;
     font-weight: 300;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .inner-content-text p{
     color: rgb(0, 90, 20);
     font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif ;
 }
 
 
@@ -353,6 +363,7 @@ nav a:hover::after
 .footer-inner-content p {
     font-size: 1.5rem;
     margin: 1rem 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .footer-inner-content a {
@@ -394,10 +405,12 @@ nav a:hover::after
 .content p{
     font-size: 15px;
     color: rgb(0, 90, 20);
+    font-family: Arial, Helvetica, sans-serif;
 }
 .content h2 {
     color: rgb(0, 90, 20);
     font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .Kurucu {
@@ -414,8 +427,8 @@ nav a:hover::after
     overflow: hidden;
     box-shadow: 0 15px 24px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     border-radius: 25px;
 }
 
@@ -436,17 +449,20 @@ nav a:hover::after
     color: rgb(0, 90, 20);
     font-size: 22px;
     margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .content-kur h3{
     color: rgb(0, 90, 20);
     font-size: 16px;
     margin-bottom: 10px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .content-kur p {
     color: rgb(0, 90, 20);
     font-size: 16px;
     line-height: 1.5;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .instagram-btn {
     display: inline-flex; /* Düğmeyi iç içe geçmiş hale getir */
@@ -489,13 +505,16 @@ nav a:hover::after
     font-size: 35px;
     font-weight: 500;
     color: rgb(0, 90, 20);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .feture-heading h1 span{
     color: rgb(0, 90, 20);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .feature-image p{
     color: rgb(0, 90, 20);
     font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .main-feautred{
     display: grid;
@@ -582,7 +601,7 @@ nav a:hover::after
 }
 
 .contact-info {
-    background-color: #f9f9f9;
+    background-color: white;
     float: right;
     margin-right: 10%;
 
@@ -590,14 +609,16 @@ nav a:hover::after
 
 .contact-info h2 {
     margin-bottom: 10px;
-    color: #515354;
+    color: rgb(0, 90, 20);
     font-size: 21px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .contact-info p {
     margin: 0;
-    color: #515354;
+    color: rgb(0, 90, 20);
     font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .contact-info ul {
@@ -609,7 +630,7 @@ nav a:hover::after
 .contact-info ul li {
     margin-right: 5px; /* Öğeler arasında boşluk bırak */
     margin-bottom: 5px;
-    color: #515354;
+    color: rgb(0, 90, 20);
     font-size: 18px;
     padding-right: 15px;
 }
@@ -619,15 +640,16 @@ nav a:hover::after
 }
 
 .contact-form {
-    background-color: #f0f0f0;
+    background-color: white;
     margin-left: 10%;
 
 }
 
 .contact-form h2 {
     margin-bottom: 10px;
-    color: #515354;
+    color: rgb(0, 90, 20);
     font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .contact-form input,
@@ -740,11 +762,12 @@ nav a:hover::after
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 40px;
         padding: 5rem;
-        border: 3px solid  rgb(0, 90, 20);
+        border: 4px ;
     }
     .inner-content-text p{
         color:  rgb(0, 90, 20);
         font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
     }
     .search-form{
         width: 100%;
