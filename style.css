@@ -38,33 +38,34 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #333;
+    background-color: white;
     z-index: 2000;
     width: 100%;
     height: 130px;
-    border: 2px solid var(--primar-color);
+    border: 4px solid var(--font-color);
+    
 }
 
 header .logo img {
     margin-left: -50px;
-    width: 120px;
+    width: 180px;
     border-radius: 50%;
 }
 
 nav a{
     margin-left: 1.5rem;
     padding: 1rem;
-    color: white;
+    color: black;
     font-size: 1.5rem;
     position: relative;
 }
 nav a:hover{
-    color: var(--primar-color);
+    color: var(--font-color);
 }
 
 nav a::after{
     content: "";
-    background-color: var(--primar-color);
+    background-color: var(--font-color);
     width: 0;
     transition: 1s;
     height: 3px;
@@ -84,11 +85,11 @@ nav a:hover::after
 .myicons div{
     margin-left: 1rem;
     font-size: 2rem;
-    color: white;
+    color: black;
 }
 
 .myicons div:hover{
-    color: var(--primar-color);
+    color: var(--font-color);
     cursor: pointer;
 }
 
@@ -111,21 +112,21 @@ nav a:hover::after
     width: 100%;
     padding: 2rem;
     border-radius: 10px;
-    outline: #efbb20;
-    border: 1px solid var(--primar-color);
+    outline: #333;
+    border: 1px solid var(--font-color);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px ;
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .search-form.active{
     top: 100%;
-    transition: 1s;
+    transition: 0.5s;
 
 }
 .navbar.active
 {
     right: 0;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .home{
@@ -138,6 +139,7 @@ nav a:hover::after
 .mySwiper{
     width: 100%;
     max-height: 592px;
+    
     
 }
 
@@ -219,11 +221,12 @@ nav a:hover::after
     padding: 1rem;
     box-sizing: border-box;
     width: 100%; /* Kartların genişliğini ayarlar */
-    background-color: #f9f9f9; /* Kart arka plan rengi */
+    background-color: whitesmoke; /* Kart arka plan rengi */
     border-radius: 8px; /* Kart kenar yuvarlaklığı */
     overflow: hidden; /* İçeriklerin kartın sınırları içinde kalmasını sağlar */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Kartın gölgesi */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Kartın gölgesi */
     margin-bottom: 20px; 
+    border: 3px solid var(--font-color);
 }
 .inner-services .services-images img {
     width: 100%;
@@ -249,7 +252,7 @@ nav a:hover::after
 }
 .why-us{
     
-    background-color: #2c353d;
+    background-color: whitesmoke;
     width: 100%;
     padding: 4rem 5%;
     background-repeat: no-repeat;
@@ -264,7 +267,7 @@ nav a:hover::after
 
 .why-us-heading h1{
     font-size: 35px;
-    color: rgb(255, 251, 251);
+    color: #333;
     font-weight: 500;
 }
 
@@ -278,7 +281,7 @@ nav a:hover::after
 .main-inner{
     flex: 0 0 calc(33% - 1rem);
     padding: 2rem 1rem;
-    border: 1px solid var(--primar-color);
+    border: 3px solid var(--font-color);
 
 }
 .icon-text-main{
@@ -294,30 +297,30 @@ nav a:hover::after
 }
 
 .inner-icon i{
-    color:white;
+    color:#333;
     font-size: 22px;
     padding: 2rem;
-    border: 1px solid rgb(255, 251, 251);
+    border: 1px solid #333;
     border-radius: 100%;
 }
 .inner-content-text h2{
-    color:white;
+    color:#333;
     font-size: 22px;
     padding: 1rem 0;
     font-weight: 300;
 }
 .inner-content-text p{
-    color: white;
+    color: #333;
     font-size: 14px;
 }
 
 
 
 .footer {
-    padding: 4rem 7%;
+    padding: 1rem 7%;
     width: 100%;
-    background-color: rgb(27, 27, 27); 
-    border: 2px solid var(--primar-color);
+    background-color: white; 
+    border: 3px solid var(--font-color);
 }
 
 .main-footer {
@@ -330,7 +333,7 @@ nav a:hover::after
     flex: 1 1 calc(33.33% - 1rem); /* Öğelerin genişliğini eşit olarak paylaştırmak */
     max-width: calc(33.33% - 1rem); /* Öğelerin maksimum genişliğini ayarlamak */
     padding: 1rem;
-    color: white; /* Yazı rengini beyaz yapmak */
+    color: black; /* Yazı rengini beyaz yapmak */
 }
 
 .footer-inner-content h2 {
@@ -358,13 +361,14 @@ nav a:hover::after
 
 .about-card {
     max-width: 400px;
-    border: 1px solid var(--primar-color);
+    border: 3px solid var(--font-color);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
     margin-top: 150px;
-    background-color: #000;
+    background-color: whitesmoke;
+    border-radius: 25px;
 }
 
 .about-card:hover {
@@ -381,10 +385,10 @@ nav a:hover::after
 }
 .content p{
     font-size: 15px;
-    color: white;
+    color: var(--font-color);
 }
 .content h2 {
-    color: white;
+    color: var(--font-color);
     font-size: 22px;
 }
 
@@ -396,14 +400,15 @@ nav a:hover::after
 
 .kurucu-card {
     max-width: 400px;
-    background-color: #000000;
-    border: 1px solid var(--primar-color);
+    background-color: whitesmoke;
+    border: 3px solid var(--font-color);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
     margin-top: 10px;
     margin-bottom: 10px;
+    border-radius: 25px;
 }
 
 .kurucu-card:hover {
@@ -420,18 +425,18 @@ nav a:hover::after
 }
 
 .content-kur h2 {
-    color: white;
+    color: var(--font-color);
     font-size: 22px;
     margin-bottom: 10px;
 }
 .content-kur h3{
-    color: white;
+    color: var(--font-color);
     font-size: 16px;
     margin-bottom: 10px;
 }
 
 .content-kur p {
-    color: white;
+    color: var(--font-color);
     font-size: 16px;
     line-height: 1.5;
 }
@@ -440,16 +445,14 @@ nav a:hover::after
     align-items: center; /* İçerikleri dikeyde hizala */
     justify-content: center; /* İçerikleri yatayda hizala */
     padding: 8px; /* Düğme dolgusu */
-    background-color: #000000; /* Instagram rengi */
-    color: #fff;
+    background-color: whitesmoke; /* Instagram rengi */
+    color: whitesmoke;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
 
-.instagram-btn:hover {
-    background-color: #ffffff; /* Hover rengi */
-}
+
 
 .instagram-btn img {
     padding: 0;
@@ -702,7 +705,7 @@ nav a:hover::after
     nav{
         position: absolute;
         top: 100%;
-        background-color: var(--navbar-color);
+        background-color: var(--font-color);
         width: 30rem;
         right: -3000px;
         height: 100vh;
@@ -713,18 +716,18 @@ nav a:hover::after
         padding: 1rem;
         margin: 1rem;
         background-color: white;
-        color: var(--primar-color);
-        border: 5px solid var(--primar-color);
+        color: var(--heading-color);
+        border: 3px solid var(--heading-color);
     }
     .main-inner {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 40px;
         padding: 5rem;
-        border: 1px solid var(--primar-color);
+        border: 3px solid var(--font-color);
     }
     .inner-content-text p{
-        color: white;
+        color: #333;
         font-size: 16px;
     }
     .search-form{
