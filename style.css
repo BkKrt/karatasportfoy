@@ -763,6 +763,7 @@ nav a:hover::after
         gap: 40px;
         padding: 5rem;
         border: 4px ;
+        height: 40vh;
     }
     .inner-content-text p{
         color:  rgb(0, 90, 20);
