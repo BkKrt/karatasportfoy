@@ -44,6 +44,7 @@ header {
     height: 130px;
     border: 2px solid rgb(0, 90, 20);
     
+    
 }
 
 header .logo img {
@@ -130,7 +131,7 @@ nav a:hover::after
     transition: 0.5s;
 }
 
-.home{
+/* .home{
     padding-top: 130px;
     position: relative;
     height: 50%;
@@ -167,7 +168,7 @@ nav a:hover::after
     color: #000;
     opacity: 1;
     background: rgba(0, 0, 0, 0.2);
-  }
+  } */
 
 /* .sldier-button a{
     padding: 1.2rem 2rem;
@@ -622,7 +623,7 @@ nav a:hover::after
 }
 
 .contact-info ul {
-    padding: 0;
+    padding-left: 18px;
     display: flex; /* Liste öğelerini yan yana sırala */
     
 }
@@ -633,6 +634,7 @@ nav a:hover::after
     color: rgb(0, 90, 20);
     font-size: 18px;
     padding-right: 15px;
+    padding-left: 5px;
 }
 
 .contact-info a {
@@ -677,7 +679,161 @@ nav a:hover::after
     height: 60px;
 }
 
+.instagram2-btn img {
+    padding: 0;
+    width: 30px; /* İkonun genişliği */
+    height: 30px; /* İkonun yüksekliği */
+    margin-right: 8px; /* İkon ile metin arasında boşluk bırak */
+    transition: transform 0.3s ease;
+    border-radius: 14px;
+   
+    
+}
 
+.facebook-btn img {
+    padding: 0;
+    width: 30px; /* İkonun genişliği */
+    height: 30px; /* İkonun yüksekliği */
+    margin-right: 8px; /* İkon ile metin arasında boşluk bırak */
+    transition: transform 0.3s ease;
+    border-radius: 14px;
+   
+    
+}
+
+.twitter-btn img {
+    padding: 0;
+    width: 30px; /* İkonun genişliği */
+    height: 30px; /* İkonun yüksekliği */
+    margin-right: 8px; /* İkon ile metin arasında boşluk bırak */
+    transition: transform 0.3s ease;
+    border-radius: 14px;
+   
+    
+}
+.instagram2-btn:hover img {
+    transform: scale(1.1); /* Hover etkisi */
+}
+
+.twitter-btn:hover img {
+    transform: scale(1.1); /* Hover etkisi */
+}
+
+.facebook-btn:hover img {
+    transform: scale(1.1); /* Hover etkisi */
+}
+.home{
+    background-image: url(white-2172682_1920.jpg) ;
+    background-size: cover; /* Görselin tam olarak sığmasını sağlar */
+    background-position: center; /* Görselin ortalanmasını sağlar */
+    background-repeat: no-repeat; /* Görselin tekrar etmesini engeller */
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.1);
+    padding-top: 130px;
+    position: relative;
+    height: 50%;
+}
+
+.slider {
+    position: relative;
+    width: 70%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #515354;
+    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 45px;
+    height: auto;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+
+.home button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.home button.prev {
+    left: 10px;
+}
+
+.home button.next {
+    right: 10px;
+}
+
+.home button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.hero {
+    background: url('crane-8400990_1920.jpg') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 10;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.hero-buttons .btn {
+    background: #ff4500;
+    color: #fff;
+    padding: 15px 30px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.hero-buttons .btn:hover {
+    background: #e03e00;
+}
 
 
 
@@ -708,39 +864,17 @@ nav a:hover::after
         width: 130px;
     }
     .home {
-        padding-top: 130px; /* Önerilen değerlerle değiştirebilirsiniz */
+        padding-top: 117px; /* Önerilen değerlerle değiştirebilirsiniz */
         position: relative;
         height: auto; /* Sabit yükseklik yerine otomatik yükseklik */
     }
-
-    .mySwiper {
-        width: 100%;
-        max-height: 400px; /* Önerilen değerlerle değiştirebilirsiniz */
-        overflow: hidden; /* Slider içeriğinin taşmasını engelle */
-        margin-top: -20px;
+    .slider {
+        width: 70%; /* Mobil cihazlar için genişliği ayarla */
+        border: 1px solid #000000; /* Sınır kalınlığını azalt */
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1); /* Gölgeyi azalt */
+        border-radius: 15px; /* Köşe yuvarlamasını azalt */
     }
-
-    .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: auto; /* Sabit yükseklik yerine otomatik yükseklik */
-        object-fit: cover;
-    }
-
-    .swiper-wrapper {
-        display: flex; /* Slides'ları yan yana yerleştir */
-    }
-
-    .swiper-slide {
-        flex: 0 0 100%; /* Slides'ların genişliğini ayarla */
-    }
-
-    .swiper-button-next,
-    .swiper-button-prev {
-        position: absolute;
-        top: 50%;
-        transform: translateY(100%);
-    }
+   
     nav{
         position: absolute;
         top: 100%;
