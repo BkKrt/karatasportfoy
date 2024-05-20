@@ -42,7 +42,7 @@ header {
     z-index: 2000;
     width: 100%;
     height: 130px;
-    border: 2px solid rgb(0, 90, 20);
+    border: 2px solid black;
     
     
 }
@@ -57,7 +57,7 @@ nav a{
     margin-left: 1.5rem;
     padding: 1rem;
     color: whitesmoke;
-    font-size: 1.5rem;
+    font-size: 20px;
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -143,7 +143,7 @@ nav a:hover::after
     margin-top: 130px;
 }
 .service-heading h1{
-    color:rgb(0, 90, 20);
+    color:black;
     font-size: 30px;
     font-weight: 300;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
@@ -152,7 +152,7 @@ nav a:hover::after
 
 .service-heading .hr{
     width: 15%;    
-    background-color: rgb(0, 90, 20);
+    background-color: black;
     height: 2px;
     margin: 0 auto;
     margin-top: 0.5rem;
@@ -172,7 +172,7 @@ nav a:hover::after
     background-color: whitesmoke; /* Kart arka plan rengi */
     border-radius: 25px; /* Kart kenar yuvarlaklığı */
     overflow: hidden; /* İçeriklerin kartın sınırları içinde kalmasını sağlar */
-    box-shadow: 0 15px 24px rgba(0, 0, 0, 0.1); /* Kartın gölgesi */
+    box-shadow: 0 15px 24px rgba(0, 0, 0, 0.4); /* Kartın gölgesi */
     margin-bottom: 20px; 
     border: 4px ;
 }
@@ -187,14 +187,14 @@ nav a:hover::after
     padding: 20px;
 }
 .service-inner-content h2{
-    color: rgb(0, 90, 20);
+    color: black;
     margin: 1rem 0;
     font-size: 2rem;
     font-weight: 300;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .service-inner-content  p{
-    color: rgb(0, 90, 20);
+    color: black;
     margin: 1rem 0;
     font-size: 1.5rem;
     font-weight: 200;
@@ -221,7 +221,7 @@ nav a:hover::after
 
 .why-us-heading h1{
     font-size: 35px;
-    color: rgb(0, 90, 20);
+    color: black;
     font-weight: 500;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -237,7 +237,7 @@ nav a:hover::after
     flex: 0 0 calc(33% - 1rem);
     padding: 2rem 1rem;
     border: 4px ;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease-in-out;
     border-radius: 25px;
     width: 200px;
@@ -260,21 +260,21 @@ nav a:hover::after
 }
 
 .inner-icon i{
-    color:rgb(0, 90, 20);
+    color:black;
     font-size: 22px;
     padding: 2rem;
-    border: 1px solid rgb(0, 90, 20);
+    border: 1px solid black;
     border-radius: 100%;
 }
 .inner-content-text h2{
-    color:rgb(0, 90, 20);
+    color:black;
     font-size: 22px;
     padding: 1rem 0;
     font-weight: 300;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .inner-content-text p{
-    color: rgb(0, 90, 20);
+    color: black;
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif ;
 }
@@ -285,7 +285,7 @@ nav a:hover::after
     padding: 1rem 7%;
     width: 100%;
     background-color: #000000;
-    border: 2px solid rgb(0, 90, 20);
+    border: 2px solid black;
 }
 
 .main-footer {
@@ -330,7 +330,7 @@ nav a:hover::after
     border: 4px ;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 15px 24px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 24px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease-in-out;
     margin-top: 150px;
     background-color: whitesmoke;
@@ -351,11 +351,11 @@ nav a:hover::after
 }
 .content p{
     font-size: 15px;
-    color: rgb(0, 90, 20);
+    color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
 .content h2 {
-    color: rgb(0, 90, 20);
+    color: black;
     font-size: 22px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -372,7 +372,7 @@ nav a:hover::after
     border: 4px ;
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 15px 24px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 24px rgba(0, 0, 0, 0.4);
     transition: transform 0.3s ease-in-out;
     margin-top: 25px;
     margin-bottom: 25px;
@@ -393,20 +393,20 @@ nav a:hover::after
 }
 
 .content-kur h2 {
-    color: rgb(0, 90, 20);
+    color: black;
     font-size: 22px;
     margin-bottom: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .content-kur h3{
-    color: rgb(0, 90, 20);
+    color: black;
     font-size: 16px;
     margin-bottom: 10px;
     font-family: 'Courier New', Courier, monospace;
 }
 
 .content-kur p {
-    color: rgb(0, 90, 20);
+    color: black;
     font-size: 16px;
     line-height: 1.5;
     font-family: Arial, Helvetica, sans-serif;
@@ -451,11 +451,11 @@ nav a:hover::after
 .feture-heading h1{
     font-size: 35px;
     font-weight: 500;
-    color: rgb(0, 90, 20);
+    color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .feture-heading h1 span{
-    color: rgb(0, 90, 20);
+    color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .feature-image p{
@@ -477,7 +477,7 @@ nav a:hover::after
     background-color: whitesmoke; /* Kart arka plan rengi */
     border-radius: 25px; /* Kart kenar yuvarlaklığı */
     overflow: hidden; /* İçeriklerin kartın sınırları içinde kalmasını sağlar */
-    box-shadow: 0 15px 24px rgba(0, 0, 0, 0.1); /* Kartın gölgesi */
+    box-shadow: 0 15px 24px rgba(0, 0, 0, 0.4); /* Kartın gölgesi */
     margin-bottom: 20px; 
     border: 4px ;
 }
@@ -541,7 +541,7 @@ nav a:hover::after
     width: 500px;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 15px 24px rgba(0, 0, 0, 0.1); /* Gölgelendirme efekti */
+    box-shadow: 0 15px 24px rgba(0, 0, 0, 0.4); /* Gölgelendirme efekti */
     height: auto;
     border: 4px ;
     
@@ -556,14 +556,14 @@ nav a:hover::after
 
 .contact-info h2 {
     margin-bottom: 10px;
-    color: rgb(0, 90, 20);
+    color: black;
     font-size: 21px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .contact-info p {
     margin: 0;
-    color: rgb(0, 90, 20);
+    color: black;
     font-size: 19px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -577,7 +577,7 @@ nav a:hover::after
 .contact-info ul li {
     margin-right: 5px; /* Öğeler arasında boşluk bırak */
     margin-bottom: 5px;
-    color: rgb(0, 90, 20);
+    color: black;
     font-size: 18px;
     padding-right: 15px;
     padding-left: 5px;
@@ -595,7 +595,7 @@ nav a:hover::after
 
 .contact-form h2 {
     margin-bottom: 10px;
-    color: rgb(0, 90, 20);
+    color: black;
     font-size: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -668,118 +668,45 @@ nav a:hover::after
 .facebook-btn:hover img {
     transform: scale(1.1); /* Hover etkisi */
 }
-.home{
-    background-image: url(white-2172682_1920.jpg) ;
-    background-size: cover; /* Görselin tam olarak sığmasını sağlar */
-    background-position: center; /* Görselin ortalanmasını sağlar */
-    background-repeat: no-repeat; /* Görselin tekrar etmesini engeller */
-    background-color: rgba(255, 255, 255, 0.2);
-    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.1);
-    padding-top: 130px;
-    position: relative;
-    height: 50%;
-}
 
-.slider {
-    position: relative;
-    width: 70%;
-    max-width: 1000px;
-    margin: auto;
-    overflow: hidden;
-    border: 2px solid #515354;
-    box-shadow: 0 25px 40px rgba(0, 0, 0, 0.1);
-    border-radius: 45px;
-    height: auto;
-}
 
-.slides {
+.main-container {
     display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.slide {
-    min-width: 100%;
-    box-sizing: border-box;
-}
-
-.slide img {
-    width: 100%;
-    display: block;
-}
-
-.home button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 10;
-}
-
-.home button.prev {
-    left: 10px;
-}
-
-.home button.next {
-    right: 10px;
-}
-
-.home button:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.hero {
-    background: url('crane-8400990_1920.jpg') no-repeat center center/cover;
-    height: 100vh;
-    position: relative;
-    color: #fff;
-    display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
+    justify-content: space-between;
+    padding: 50px;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
+.text-section {
+    flex: 1;
+    margin-top: 130px;
+    margin-right: 10px;
+}
+
+.text-section h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.text-section p {
+    margin-top: 20px;
+    font-size: 1.8em;
+}
+
+
+.image-section {
+    flex: 1;
+    margin-top: 130px;
+    
+}
+
+.image-section img {
     width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    height: auto;
+    border-radius: 15px;
+    box-shadow:0px 8px 10px #000000;
 }
 
-.hero-content {
-    position: relative;
-    z-index: 10;
-}
-
-.hero h2 {
-    font-size: 3em;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1.2em;
-    margin-bottom: 40px;
-}
-
-.hero-buttons .btn {
-    background: #ff4500;
-    color: #fff;
-    padding: 15px 30px;
-    margin: 5px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background 0.3s ease;
-}
-
-.hero-buttons .btn:hover {
-    background: #e03e00;
-}
 
 
 
