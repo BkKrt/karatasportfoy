@@ -38,7 +38,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #5b6f5c;
+    background-color: #9c9c9c; /* Örnek açık gri */
     z-index: 2000;
     width: 100%;
     height: 130px;
@@ -284,7 +284,7 @@ nav a:hover::after
 .footer {
     padding: 1rem 7%;
     width: 100%;
-    background: #5b6f5c;
+    background-color: #9c9c9c;
     border: 2px solid rgb(0, 90, 20);
 }
 
