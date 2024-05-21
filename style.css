@@ -31,20 +31,17 @@ html{
 
 
 header {
-    position: fixed;
-    left: 0;
-    right: 0;
-    padding: 1.5rem 7%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     background-color: #000000; /* Örnek açık gri */
-    z-index: 2000;
     width: 100%;
     height: 130px;
     border: 2px solid black;
-    
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 header .logo img {
@@ -140,7 +137,7 @@ nav a:hover::after
     text-align: center;
     padding: 2rem 0;
     align-items: center;
-    margin-top: 130px;
+   
 }
 .service-heading h1{
     color:black;
@@ -165,16 +162,20 @@ nav a:hover::after
     
 }
 .inner-services{
-    flex: 0 0 calc(33.33% - 1rem); /* İçeriklerin genişliklerini ayarlar ve 1rem boşluk bırakır */
-    padding: 1rem;
     box-sizing: border-box;
     width: 100%; /* Kartların genişliğini ayarlar */
-    background-color: whitesmoke; /* Kart arka plan rengi */
-    border-radius: 25px; /* Kart kenar yuvarlaklığı */
     overflow: hidden; /* İçeriklerin kartın sınırları içinde kalmasını sağlar */
-    box-shadow: 0 15px 24px rgba(0, 0, 0, 0.4); /* Kartın gölgesi */
     margin-bottom: 20px; 
-    border: 4px ;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex: 1 1 calc(33.333% - 40px); /* Kartların genişliğini ayarlamak için */
+    box-sizing: border-box; /* İç boşluk ve kenar boşluklarını kutu boyutuna dahil etmek için */
+    min-width: 250px; /* Kartların minimum genişliğini belirlemek için */
+    text-align: center;
 }
 .inner-services .services-images img {
     width: 100%;
@@ -234,18 +235,24 @@ nav a:hover::after
     justify-content: center;
 }
 .main-inner{
-    flex: 0 0 calc(33% - 1rem);
-    padding: 2rem 1rem;
-    border: 4px ;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
-    transition: transform 0.3s ease-in-out;
-    border-radius: 25px;
+    
+    transition: transform 0.3s ease-in-out; 
     width: 200px;
     height: 200px;
-    background-color: whitesmoke;
-   
-    
+    overflow: auto;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex: 1 1 calc(33.333% - 40px); /* Kartların genişliğini ayarlamak için */
+    box-sizing: border-box; /* İç boşluk ve kenar boşluklarını kutu boyutuna dahil etmek için */
+    min-width: 250px; /* Kartların minimum genişliğini belirlemek için */
+    text-align: center;
 }
+
+
 .icon-text-main{
     display: flex;
     align-items: center;
@@ -320,21 +327,30 @@ nav a:hover::after
 
 .container {
     display: flex;
-    justify-content: center;
-    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center; /* Kartları yatayda ortalamak için */
+    padding: 20px;
+    max-width: 1200px; /* İsteğe bağlı olarak maksimum genişlik belirleyebilirsiniz */
+    margin: 0 auto;
     
 }
 
 .about-card {
-    max-width: 400px;
-    border: 4px ;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 15px 24px rgba(0, 0, 0, 0.4);
+    flex: 1;
+    max-width: 400px;  
+    overflow: hidden;  
     transition: transform 0.3s ease-in-out;
-    margin-top: 150px;
-    background-color: whitesmoke;
-    border-radius: 25px;
+    margin-top: 300px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex: 1 1 calc(5% - 40px); /* Kartların genişliğini ayarlamak için */
+    box-sizing: border-box; /* İç boşluk ve kenar boşluklarını kutu boyutuna dahil etmek için */
+    min-width: 250px; /* Kartların minimum genişliğini belirlemek için */
+    text-align: center;
 }
 
 .about-card:hover {
@@ -368,15 +384,20 @@ nav a:hover::after
 
 .kurucu-card {
     max-width: 400px;
-    background-color: whitesmoke;
-    border: 4px ;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 15px 24px rgba(0, 0, 0, 0.4);
+    overflow: hidden; 
     transition: transform 0.3s ease-in-out;
     margin-top: 25px;
     margin-bottom: 25px;
-    border-radius: 25px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex: 1 1 calc(33.333% - 40px); /* Kartların genişliğini ayarlamak için */
+    box-sizing: border-box; /* İç boşluk ve kenar boşluklarını kutu boyutuna dahil etmek için */
+    min-width: 250px; /* Kartların minimum genişliğini belirlemek için */
+    text-align: center;
 }
 
 .kurucu-card:hover {
@@ -442,7 +463,7 @@ nav a:hover::after
 
 .our-featured{
     padding: 2rem 7%;
-    padding-top: 130px;
+    
 }
 .feture-heading{
     text-align: center;
@@ -459,7 +480,7 @@ nav a:hover::after
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .feature-image p{
-    color: rgb(0, 90, 20);
+    color:black;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -470,16 +491,22 @@ nav a:hover::after
 }
 .inner-featred{
     
-    flex: 0 0 calc(33.33% - 1rem); /* İçeriklerin genişliklerini ayarlar ve 1rem boşluk bırakır */
-    padding: 1rem;
+   
     box-sizing: border-box;
     width: 100%; /* Kartların genişliğini ayarlar */
-    background-color: whitesmoke; /* Kart arka plan rengi */
-    border-radius: 25px; /* Kart kenar yuvarlaklığı */
     overflow: hidden; /* İçeriklerin kartın sınırları içinde kalmasını sağlar */
-    box-shadow: 0 15px 24px rgba(0, 0, 0, 0.4); /* Kartın gölgesi */
-    margin-bottom: 20px; 
-    border: 4px ;
+    margin-bottom: 20px;  
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex: 1 1 calc(33.333% - 40px); /* Kartların genişliğini ayarlamak için */
+    box-sizing: border-box; /* İç boşluk ve kenar boşluklarını kutu boyutuna dahil etmek için */
+    min-width: 250px; /* Kartların minimum genişliğini belirlemek için */
+    text-align: center;
+    
 }
 
 .feature-image img{
@@ -528,31 +555,41 @@ nav a:hover::after
     display: flex;
     flex-direction: column; /* İçerikleri dikey yönde sırala */
     align-items: center; /* İçerikleri yatayda merkezle */
-    padding-top: 120px;
     margin-bottom: 30px;
     width: 100%;
 }
 
 
 
-.contact-info,
-.contact-form {
-    
+.contact-info{
     width: 500px;
-    padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 15px 24px rgba(0, 0, 0, 0.4); /* Gölgelendirme efekti */
-    height: auto;
-    border: 4px ;
-    
-}
-
-.contact-info {
-    background-color: white;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 40px); /* Kartların genişliğini ayarlamak için */
+    box-sizing: border-box; /* İç boşluk ve kenar boşluklarını kutu boyutuna dahil etmek için */
+    min-width: 250px; /* Kartların minimum genişliğini belirlemek için */  
     float: right;
     margin-right: 10%;
-
+    
 }
+.contact-form {   
+    width: 500px;   
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1 1 calc(33.333% - 40px); /* Kartların genişliğini ayarlamak için */
+    box-sizing: border-box; /* İç boşluk ve kenar boşluklarını kutu boyutuna dahil etmek için */
+    min-width: 250px; /* Kartların minimum genişliğini belirlemek için */
+    text-align: center;
+    
+}
+
+
 
 .contact-info h2 {
     margin-bottom: 10px;
@@ -571,6 +608,7 @@ nav a:hover::after
 .contact-info ul {
     padding-left: 18px;
     display: flex; /* Liste öğelerini yan yana sırala */
+    
     
 }
 
@@ -679,43 +717,274 @@ nav a:hover::after
 
 .text-section {
     flex: 1;
-    margin-top: 130px;
+    margin-top: 30px;
     margin-right: 10px;
 }
 
 .text-section h1 {
     font-size: 2.5em;
     margin: 0;
-}
-
-.text-section p {
-    margin-top: 20px;
-    font-size: 1.8em;
-}
-
-
-.image-section {
-    flex: 1;
-    margin-top: 130px;
+   
     
 }
 
-.image-section img {
-    width: 100%;
+
+.text-section img {
+    width: 50%;
     height: auto;
     border-radius: 15px;
     box-shadow:0px 8px 10px #000000;
+    float: right;
+}
+.text-container{
+    margin-top: 20px;
+    font-size: 1.8em;
+    padding-top: 10vh;
 }
 
 
 
 
 
+@media (max-width:1000px) {
+    html{
+        font-size: 55%;
+    }
+
+    #menu-bar{
+        display: initial;
+    }
+    header {
+        position: fixed;
+        padding: 1rem;
+        left: 0;
+        right: 0;
+        padding: 1.5rem 7%; /* Bu kısmı değiştirelim */
+        height: auto; /* Sabit yükseklik yerine otomatik yükseklik */
+        
+    }
+    header .logo img {
+        margin-left: -10px;
+        width: 130px;
+    }
+  
+    nav{
+        position: absolute;
+        top: 100%;
+        background-color: #515354;
+        width: 30rem;
+        right: -3000px;
+        height: 100vh;
+    }
+    nav a{
+        display: block;
+        border-radius: 10px;
+        padding: 1rem;
+        margin: 1rem;
+        background-color: white;
+        color: #515354;
+        border: 3px solid  rgb(0, 90, 20);
+    }
+    .main-inner {
+        
+        padding: 2rem 1rem;
+        border: 4px ;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        transition: transform 0.3s ease-in-out;
+        border-radius: 25px;
+        width: 300px;
+        height: 300px;
+        background-color: whitesmoke;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 40px;
+        padding: 5rem;
+        border: 4px ;
+       
+
+        
+    }
+    .inner-content-text p{
+        color:  rgb(0, 90, 20);
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .search-form{
+        width: 100%;
+        right: 0;
+        border: 2px solid  rgb(0, 90, 20);
+
+    }
+    .our-services{
+        padding-top: 120px;
+    }
+    .main-inner-services {
+        grid-template-columns: repeat(1, 1fr); /* Ekran küçültüldüğünde 1 sütun oluştur */
+    }
+   
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Kartları yatayda ortalamak için */
+        padding: 20px;
+        padding-top: 140px; /* Başlık veya üst boşluk için */
+        max-width: 1200px; /* İsteğe bağlı olarak maksimum genişlik belirleyebilirsiniz */
+        margin: 0 auto;
+       
+    }
+
+    .about-card {
+        width: 350px; /* Örnek genişlik ayarı */
+        height: 300px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        flex: 1 1 calc(33.333% - 40px); /* Kartların genişliğini ayarlamak için */
+        box-sizing: border-box; /* İç boşluk ve kenar boşluklarını kutu boyutuna dahil etmek için */
+        min-width: 250px; /* Kartların minimum genişliğini belirlemek için */
+        text-align: center;
+        
+
+    }
+
+    .kurucu-card {
+        width: 90%; /* Örnek genişlik ayarı */
+        margin-top: 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        flex: 1 1 calc(33.333% - 40px); /* Kartların genişliğini ayarlamak için */
+        box-sizing: border-box; /* İç boşluk ve kenar boşluklarını kutu boyutuna dahil etmek için */
+        min-width: 250px; /* Kartların minimum genişliğini belirlemek için */
+        text-align: center;
+        
+        
+    }
+
+    .Kurucu {
+        display: flex;        
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .our-featured {
+        padding-top: 170px; /* Sayfanın üst kısmında 100 piksel boşluk bırak */
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-feautred {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .inner-featred {
+        flex: 0 0 1;
+        width: 380px;                
+    }
 
 
-/* Genel stiller */
+    .contact-form,
+    .contact-info{
+        margin: 0;
+        float: none;
+        width: 80%;
+        margin-left: 10%;
+        
+    }
+    .contact-form {
+        background-color: #f0f0f0;
+        
+    }
+    
+    .contact-info {
+        background-color: #f9f9f9;
+        margin-bottom: 20px; 
+    }
 
-@media (max-width:900px) {
+    .close-btn{
+        position: absolute;
+        top: 50px;
+        right: 10px;
+        color: #000000;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 10000;
+        visibility: hidden;
+    
+    }
+    
+    .inner-featred.fullscreen .feature-image img {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        object-fit: contain;
+        z-index: 9999;
+    }
+    
+
+    .inner-featred.fullscreen .feature-image .close-btn {
+        position: fixed;
+        top: 300px;
+        right: 10px;
+        color: #ff0000;
+        font-size: 24px;
+        cursor: pointer;
+        z-index: 10000;
+        visibility: visible;
+        
+    }
+    
+    .main-container {
+        flex-direction: column;
+    }
+
+    .text-section {
+        order: 1;
+    }
+
+    .text-section img{
+        order: 2;
+    }
+
+
+    .text-section img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+        margin-left: px;
+        
+    }
+    .text-container{
+        display: block;
+        margin-left: 10px;
+    }
+    .text-container h1{
+        font-size: 30px;
+        
+    }
+
+}
+
+
+@media (max-width:800px) {
     html{
         font-size: 55%;
     }
@@ -774,7 +1043,7 @@ nav a:hover::after
         height: 50%;
     }
     .inner-content-text p{
-        color:  rgb(0, 90, 20);
+        color:  black;
         font-size: 16px;
         font-family: Arial, Helvetica, sans-serif;
     }
@@ -784,13 +1053,14 @@ nav a:hover::after
         border: 2px solid  rgb(0, 90, 20);
 
     }
+
+    .our-services{
+        padding-top: 120px;
+    }
     .main-inner-services {
         grid-template-columns: repeat(1, 1fr); /* Ekran küçültüldüğünde 1 sütun oluştur */
     }
-    .main-inner {
-        flex: 1 1 100%; /* Küçük ekranlarda %50 genişlik */
-        max-width: 100%;
-    }
+   
 
     .container {
         display: flex;
@@ -892,8 +1162,35 @@ nav a:hover::after
         
     }
     
-    
+    .main-container {
+        flex-direction: column;
+    }
 
+    .text-section {
+        order: 1;
+        padding-top: 80px;
+    }
+
+    .text-section img{
+        order: 2;
+    }
+
+
+    .text-section img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+        margin-left: 5px;
+        
+    }
+    .text-container{
+        display: block;
+        margin-left: 10px;
+    }
+    .text-container h1{
+        font-size: 30px;
+        
+    }
 
 
 }
