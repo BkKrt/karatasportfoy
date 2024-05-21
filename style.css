@@ -350,7 +350,7 @@ nav a:hover::after
     flex: 1 1 calc(5% - 40px); /* Kartların genişliğini ayarlamak için */
     box-sizing: border-box; /* İç boşluk ve kenar boşluklarını kutu boyutuna dahil etmek için */
     min-width: 250px; /* Kartların minimum genişliğini belirlemek için */
-    text-align: center;
+    
 }
 
 .about-card:hover {
@@ -397,7 +397,7 @@ nav a:hover::after
     flex: 1 1 calc(33.333% - 40px); /* Kartların genişliğini ayarlamak için */
     box-sizing: border-box; /* İç boşluk ve kenar boşluklarını kutu boyutuna dahil etmek için */
     min-width: 250px; /* Kartların minimum genişliğini belirlemek için */
-    text-align: center;
+    
 }
 
 .kurucu-card:hover {
@@ -847,7 +847,7 @@ nav a:hover::after
         flex: 1 1 calc(33.333% - 40px); /* Kartların genişliğini ayarlamak için */
         box-sizing: border-box; /* İç boşluk ve kenar boşluklarını kutu boyutuna dahil etmek için */
         min-width: 250px; /* Kartların minimum genişliğini belirlemek için */
-        text-align: center;
+       
         
 
     }
@@ -864,7 +864,7 @@ nav a:hover::after
         flex: 1 1 calc(33.333% - 40px); /* Kartların genişliğini ayarlamak için */
         box-sizing: border-box; /* İç boşluk ve kenar boşluklarını kutu boyutuna dahil etmek için */
         min-width: 250px; /* Kartların minimum genişliğini belirlemek için */
-        text-align: center;
+      
         
         
     }
