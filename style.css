@@ -129,6 +129,81 @@ nav a:hover::after
 }
 
 
+<<<<<<< HEAD
+=======
+.our-services{
+    padding: 2rem 7%;
+}
+
+.service-heading{
+    text-align: center;
+    padding: 2rem 0;
+    align-items: center;
+   
+}
+.service-heading h1{
+    color:black;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+
+}
+
+.service-heading .hr{
+    width: 15%;    
+    background-color: black;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+}
+
+.main-inner-services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ekran genişliğine göre 3 sütun oluştur */
+    grid-gap: 1rem;
+    
+}
+.inner-services{
+    box-sizing: border-box;
+    width: 100%; /* Kartların genişliğini ayarlar */
+    overflow: hidden; /* İçeriklerin kartın sınırları içinde kalmasını sağlar */
+    margin-bottom: 20px; 
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex: 1 1 calc(33.333% - 40px); /* Kartların genişliğini ayarlamak için */
+    box-sizing: border-box; /* İç boşluk ve kenar boşluklarını kutu boyutuna dahil etmek için */
+    min-width: 250px; /* Kartların minimum genişliğini belirlemek için */
+    
+}
+.inner-services .services-images img {
+    width: 100%;
+    
+
+}
+
+.service-inner-content{
+    padding: 2rem 0;
+    padding: 20px;
+}
+.service-inner-content h2{
+    color: black;
+    margin: 1rem 0;
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.service-inner-content  p{
+    color: black;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 200;
+    font-family: Arial, Helvetica, sans-serif;
+}
+>>>>>>> e86414cb8e6de744438a82696eea62ad88a2c4c3
 .why-us{
     
     background-color: white;
@@ -177,7 +252,11 @@ nav a:hover::after
     flex: 1 1 calc(33.333% - 40px); /* Kartların genişliğini ayarlamak için */
     box-sizing: border-box; /* İç boşluk ve kenar boşluklarını kutu boyutuna dahil etmek için */
     min-width: 250px; /* Kartların minimum genişliğini belirlemek için */
+<<<<<<< HEAD
    
+=======
+    
+>>>>>>> e86414cb8e6de744438a82696eea62ad88a2c4c3
 }
 
 
@@ -253,6 +332,60 @@ nav a:hover::after
     
 }
 
+<<<<<<< HEAD
+=======
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Kartları yatayda ortalamak için */
+    padding: 20px;
+    max-width: 1200px; /* İsteğe bağlı olarak maksimum genişlik belirleyebilirsiniz */
+    margin: 0 auto;
+    
+}
+
+.about-card {
+    flex: 1;
+    max-width: 400px;  
+    overflow: hidden;  
+    transition: transform 0.3s ease-in-out;
+    margin-top: 300px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex: 1 1 calc(5% - 40px); /* Kartların genişliğini ayarlamak için */
+    box-sizing: border-box; /* İç boşluk ve kenar boşluklarını kutu boyutuna dahil etmek için */
+    min-width: 250px; /* Kartların minimum genişliğini belirlemek için */
+    
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+}
+
+.about-card img {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    padding: 1rem;
+}
+.content p{
+    font-size: 15px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.content h2 {
+    color: black;
+    font-size: 22px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+>>>>>>> e86414cb8e6de744438a82696eea62ad88a2c4c3
 .Kurucu {
     display: flex;
     justify-content: center;
@@ -272,11 +405,19 @@ nav a:hover::after
     padding: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     margin: 10px;
+<<<<<<< HEAD
     flex: 1 1 calc(33.333% - 40px); 
     box-sizing: border-box; 
     min-width: 250px; 
    
 } 
+=======
+    flex: 1 1 calc(33.333% - 40px); /* Kartların genişliğini ayarlamak için */
+    box-sizing: border-box; /* İç boşluk ve kenar boşluklarını kutu boyutuna dahil etmek için */
+    min-width: 250px; /* Kartların minimum genişliğini belirlemek için */
+    
+}
+>>>>>>> e86414cb8e6de744438a82696eea62ad88a2c4c3
 
  .kurucu-card:hover {
     transform: translateY(-5px);
@@ -339,6 +480,55 @@ nav a:hover::after
     transform: scale(1.1); /* Hover etkisi */
 }
 
+<<<<<<< HEAD
+=======
+.our-featured{
+    padding: 2rem 7%;
+    
+}
+.feture-heading{
+    text-align: center;
+    padding: 2rem 0;
+}
+.feture-heading h1{
+    font-size: 35px;
+    font-weight: 500;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.feture-heading h1 span{
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.feature-image p{
+    color:black;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-feautred{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Ekran genişliğine göre 3 sütun oluştur */
+    grid-gap: 1rem;
+}
+.inner-featred{
+    
+   
+    box-sizing: border-box;
+    width: 100%; /* Kartların genişliğini ayarlar */
+    overflow: hidden; /* İçeriklerin kartın sınırları içinde kalmasını sağlar */
+    margin-bottom: 20px;  
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex: 1 1 calc(33.333% - 40px); /* Kartların genişliğini ayarlamak için */
+    box-sizing: border-box; /* İç boşluk ve kenar boşluklarını kutu boyutuna dahil etmek için */
+    min-width: 250px; /* Kartların minimum genişliğini belirlemek için */
+  
+}
+>>>>>>> e86414cb8e6de744438a82696eea62ad88a2c4c3
 
 .iletisim-container{
     background-color: whitesmoke;
@@ -378,7 +568,10 @@ nav a:hover::after
     flex: 1 1 calc(33.333% - 40px); /* Kartların genişliğini ayarlamak için */
     box-sizing: border-box; /* İç boşluk ve kenar boşluklarını kutu boyutuna dahil etmek için */
     min-width: 250px; /* Kartların minimum genişliğini belirlemek için */
+<<<<<<< HEAD
     
+=======
+>>>>>>> e86414cb8e6de744438a82696eea62ad88a2c4c3
     
 }
 
@@ -841,6 +1034,74 @@ nav a:hover::after
        
     }
 
+<<<<<<< HEAD
+=======
+    .about-card {
+        width: 350px; /* Örnek genişlik ayarı */
+        height: 300px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        flex: 1 1 calc(33.333% - 40px); /* Kartların genişliğini ayarlamak için */
+        box-sizing: border-box; /* İç boşluk ve kenar boşluklarını kutu boyutuna dahil etmek için */
+        min-width: 250px; /* Kartların minimum genişliğini belirlemek için */
+       
+        
+
+    }
+
+    .kurucu-card {
+        width: 90%; /* Örnek genişlik ayarı */
+        margin-top: 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        flex: 1 1 calc(33.333% - 40px); /* Kartların genişliğini ayarlamak için */
+        box-sizing: border-box; /* İç boşluk ve kenar boşluklarını kutu boyutuna dahil etmek için */
+        min-width: 250px; /* Kartların minimum genişliğini belirlemek için */
+      
+        
+        
+    }
+
+    .Kurucu {
+        display: flex;        
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .our-featured {
+        padding-top: 170px; /* Sayfanın üst kısmında 100 piksel boşluk bırak */
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-feautred {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .inner-featred {
+        flex: 0 0 1;
+        width: 380px;                
+    }
+
+>>>>>>> e86414cb8e6de744438a82696eea62ad88a2c4c3
 
     .contact-form,
     .contact-info{
