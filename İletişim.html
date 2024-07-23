@@ -27,7 +27,7 @@
 
                 <a href="index.html">Anasayfa</a>
                 <a href="hakkımızda.html">Hakkımızda</a>
-                <a href="Hizmetler.html">Hizmetler</a>
+
                 <a href="galeri.html">Galeri</a>
                 <a href="İletişim.html">İletişim</a>
                
@@ -86,11 +86,11 @@
     
         <div class="contact-form">
             <h2>İletişim Formu</h2>
-            <form action="submit.php" method="POST">
+            <form  onsubmit="sendEmail(); reset(); return false;" method="POST">
                 <input type="text" name="name" placeholder="Adınız" required>
-                <input type="email" name="email" placeholder="E-posta Adresiniz" required>
+                <input type="mail" name="email" id="email" placeholder="E-posta Adresiniz" required>
                 <textarea name="message" placeholder="Mesajınız" required></textarea>
-                <button type="submit">Gönder</button>
+                <button type="submit" class="btn" >Gönder</button>
             </form>
         </div>
     </div>
@@ -120,6 +120,8 @@
         </div>    
     </div>
 
+    <script src="https://smtpjs.com/v3/smtp.js">
+</script>
     <script src="app.js"></script>
 </body>
 </html>

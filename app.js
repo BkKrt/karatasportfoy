@@ -22,18 +22,7 @@ menubar.onclick = () => {
 }
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    var mySwiper = new Swiper(".mySwiper", {
-        // Carousel ayarları
-        slidesPerView: 1, // Her seferinde görüntülenen slayt sayısı
-        spaceBetween: 30, // Slaytlar arasındaki boşluk
-        loop: true, // Sonsuz döngü
-        navigation: {
-            nextEl: '.swiper-button-next', // Sonraki düğme sınıfı
-            prevEl: '.swiper-button-prev', // Önceki düğme sınıfı
-        },
-    });
-});
+
 
 document.addEventListener("DOMContentLoaded", function() {
     var fullscreenElements = document.querySelectorAll('.inner-featred');
@@ -64,31 +53,34 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-let currentIndex = 0;
 
-function showSlide(index) {
-    const slides = document.querySelector('.slides');
-    const totalSlides = document.querySelectorAll('.slide').length;
-    if (index >= totalSlides) {
-        currentIndex = 0;
-    } else if (index < 0) {
-        currentIndex = totalSlides - 1;
-    } else {
-        currentIndex = index;
+
+let slideIndex = 0;
+const slides = document.getElementsByClassName("slide");
+const slideInterval = 3000; // 1 saniye = 1000 milisaniye
+
+function showSlide(n) {
+    if (n >= slides.length) { slideIndex = 0; }
+    if (n < 0) { slideIndex = slides.length - 1; }
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  // Tüm slaytları gizle
     }
-    slides.style.transform = `translateX(${-currentIndex * 100}%)`;
+    slides[slideIndex].style.display = "block";  // Aktif slaytı göster
 }
 
-function nextSlide() {
-    showSlide(currentIndex + 1);
+function moveSlide(n) {
+    showSlide(slideIndex += n);
 }
 
-function prevSlide() {
-    showSlide(currentIndex - 1);
+function autoSlide() {
+    showSlide(slideIndex += 1);
 }
 
-setInterval(nextSlide, 7000); 
+// Slider'ı başlat
+showSlide(slideIndex);
 
+// Her 1 saniyede bir otomatik geçiş
+setInterval(autoSlide, slideInterval);
 
 
 

@@ -45,7 +45,7 @@ header {
 }
 
 header .logo img {
-    margin-left: -50px;
+    margin-left: -30px;
     width: 240px;
     border-radius: 50%;
 }
@@ -129,78 +129,6 @@ nav a:hover::after
 }
 
 
-.our-services{
-    padding: 2rem 7%;
-}
-
-.service-heading{
-    text-align: center;
-    padding: 2rem 0;
-    align-items: center;
-   
-}
-.service-heading h1{
-    color:black;
-    font-size: 30px;
-    font-weight: 300;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
-
-}
-
-.service-heading .hr{
-    width: 15%;    
-    background-color: black;
-    height: 2px;
-    margin: 0 auto;
-    margin-top: 0.5rem;
-}
-
-.main-inner-services{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Ekran genişliğine göre 3 sütun oluştur */
-    grid-gap: 1rem;
-    
-}
-.inner-services{
-    box-sizing: border-box;
-    width: 100%; /* Kartların genişliğini ayarlar */
-    overflow: hidden; /* İçeriklerin kartın sınırları içinde kalmasını sağlar */
-    margin-bottom: 20px; 
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    flex: 1 1 calc(33.333% - 40px); /* Kartların genişliğini ayarlamak için */
-    box-sizing: border-box; /* İç boşluk ve kenar boşluklarını kutu boyutuna dahil etmek için */
-    min-width: 250px; /* Kartların minimum genişliğini belirlemek için */
-    text-align: center;
-}
-.inner-services .services-images img {
-    width: 100%;
-    
-
-}
-
-.service-inner-content{
-    padding: 2rem 0;
-    padding: 20px;
-}
-.service-inner-content h2{
-    color: black;
-    margin: 1rem 0;
-    font-size: 2rem;
-    font-weight: 300;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.service-inner-content  p{
-    color: black;
-    margin: 1rem 0;
-    font-size: 1.5rem;
-    font-weight: 200;
-    font-family: Arial, Helvetica, sans-serif;
-}
 .why-us{
     
     background-color: white;
@@ -249,7 +177,7 @@ nav a:hover::after
     flex: 1 1 calc(33.333% - 40px); /* Kartların genişliğini ayarlamak için */
     box-sizing: border-box; /* İç boşluk ve kenar boşluklarını kutu boyutuna dahil etmek için */
     min-width: 250px; /* Kartların minimum genişliğini belirlemek için */
-    text-align: center;
+   
 }
 
 
@@ -325,57 +253,6 @@ nav a:hover::after
     
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* Kartları yatayda ortalamak için */
-    padding: 20px;
-    max-width: 1200px; /* İsteğe bağlı olarak maksimum genişlik belirleyebilirsiniz */
-    margin: 0 auto;
-    
-}
-
-.about-card {
-    flex: 1;
-    max-width: 400px;  
-    overflow: hidden;  
-    transition: transform 0.3s ease-in-out;
-    margin-top: 300px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    flex: 1 1 calc(5% - 40px); /* Kartların genişliğini ayarlamak için */
-    box-sizing: border-box; /* İç boşluk ve kenar boşluklarını kutu boyutuna dahil etmek için */
-    min-width: 250px; /* Kartların minimum genişliğini belirlemek için */
-    text-align: center;
-}
-
-.about-card:hover {
-    transform: translateY(-5px);
-}
-
-.about-card img {
-    width: 100%;
-    height: auto;
-}
-
-.content {
-    padding: 1rem;
-}
-.content p{
-    font-size: 15px;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.content h2 {
-    color: black;
-    font-size: 22px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
 .Kurucu {
     display: flex;
     justify-content: center;
@@ -383,7 +260,8 @@ nav a:hover::after
 }
 
 .kurucu-card {
-    max-width: 400px;
+    max-width: 500px;
+    height: auto;
     overflow: hidden; 
     transition: transform 0.3s ease-in-out;
     margin-top: 25px;
@@ -394,13 +272,13 @@ nav a:hover::after
     padding: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     margin: 10px;
-    flex: 1 1 calc(33.333% - 40px); /* Kartların genişliğini ayarlamak için */
-    box-sizing: border-box; /* İç boşluk ve kenar boşluklarını kutu boyutuna dahil etmek için */
-    min-width: 250px; /* Kartların minimum genişliğini belirlemek için */
-    text-align: center;
-}
+    flex: 1 1 calc(33.333% - 40px); 
+    box-sizing: border-box; 
+    min-width: 250px; 
+   
+} 
 
-.kurucu-card:hover {
+ .kurucu-card:hover {
     transform: translateY(-5px);
 }
 
@@ -461,92 +339,7 @@ nav a:hover::after
     transform: scale(1.1); /* Hover etkisi */
 }
 
-.our-featured{
-    padding: 2rem 7%;
-    
-}
-.feture-heading{
-    text-align: center;
-    padding: 2rem 0;
-}
-.feture-heading h1{
-    font-size: 35px;
-    font-weight: 500;
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.feture-heading h1 span{
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.feature-image p{
-    color:black;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.main-feautred{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Ekran genişliğine göre 3 sütun oluştur */
-    grid-gap: 1rem;
-}
-.inner-featred{
-    
-   
-    box-sizing: border-box;
-    width: 100%; /* Kartların genişliğini ayarlar */
-    overflow: hidden; /* İçeriklerin kartın sınırları içinde kalmasını sağlar */
-    margin-bottom: 20px;  
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    flex: 1 1 calc(33.333% - 40px); /* Kartların genişliğini ayarlamak için */
-    box-sizing: border-box; /* İç boşluk ve kenar boşluklarını kutu boyutuna dahil etmek için */
-    min-width: 250px; /* Kartların minimum genişliğini belirlemek için */
-    text-align: center;
-    
-}
 
-.feature-image img{
-    width: 100%;
-    
-}
-
-.close-btn{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    color: #000000;
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 10000;
-    visibility: hidden;
-
-}
-
-.inner-featred.fullscreen .feature-image img {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: contain;
-    z-index: 9999;
-}
-
-.inner-featred.fullscreen .feature-image .close-btn {
-    position: fixed;
-    top: 0px;
-    right: 170px;
-    color: #ff0000;
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 10000;
-    visibility: visible;
-    
-}
 .iletisim-container{
     background-color: whitesmoke;
     padding-bottom: 20px;
@@ -585,7 +378,7 @@ nav a:hover::after
     flex: 1 1 calc(33.333% - 40px); /* Kartların genişliğini ayarlamak için */
     box-sizing: border-box; /* İç boşluk ve kenar boşluklarını kutu boyutuna dahil etmek için */
     min-width: 250px; /* Kartların minimum genişliğini belirlemek için */
-    text-align: center;
+    
     
 }
 
@@ -742,11 +535,231 @@ nav a:hover::after
     padding-top: 10vh;
 }
 
+.main-hak2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+}
+
+.images img {
+    margin-top: 35px;
+    margin-left: 20px;
+    width: 800px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 25px;
+    box-shadow: 2px 4px 8px #000000;
+}
+
+.text-hak2 {
+    flex: 1;
+    padding: 50px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5px;
+   
+}
+
+
+.text-hak2 h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: #004d40;
+    text-align: left;
+    position: relative;
+    
+}
+
+.text-hak2 h1::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #004d40;
+    position: absolute;
+    top: -20px;
+    left: 0;
+}
+
+.text-hak2 p{
+    font-size: 1.9em;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.main-hak1 {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.main-hak1 img {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.overlay h1, h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.overlay h1 {
+    font-size: 7em;
+}
+
+.overlay h2 {
+    font-size: 6em;
+}
+
+.overlay p {
+    margin-top: 20px;
+    font-size: 2em;
+    max-width: 500%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-kurucu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    grid-gap: 0;
+}
+
+.table-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-contentkur {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    text-align: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    background-color: #f8f8f8;
+}
+
+.text-contentkur h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.text-contentkur p {
+    margin-top: 20px;
+    font-size: 1em;
+    color: #555;
+}
+
+.safety {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.table-image {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ski-image {
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-creative{
+    padding: 6rem 7%;
+    background-color: #efbb20;
+}
+
+.main-creative h1{
+    color: #000000;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.main-inner-creative{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 2rem;
+    
+}
+
+.inner-creative{
+    flex: 1 1 400px;
+    
+}
+
+.inner-creative img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.inner-creative img:hover{
+    border-radius: 25px;
+    transform: scale(1.2) rotate(-15deg);
+}
 
 
 
 
-@media (max-width:1000px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1200px) {
     html{
         font-size: 55%;
     }
@@ -815,12 +828,7 @@ nav a:hover::after
         border: 2px solid  rgb(0, 90, 20);
 
     }
-    .our-services{
-        padding-top: 120px;
-    }
-    .main-inner-services {
-        grid-template-columns: repeat(1, 1fr); /* Ekran küçültüldüğünde 1 sütun oluştur */
-    }
+   
    
     .container {
         display: flex;
@@ -831,71 +839,6 @@ nav a:hover::after
         max-width: 1200px; /* İsteğe bağlı olarak maksimum genişlik belirleyebilirsiniz */
         margin: 0 auto;
        
-    }
-
-    .about-card {
-        width: 350px; /* Örnek genişlik ayarı */
-        height: 300px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        background-color: #f9f9f9;
-        border: 1px solid #ddd;
-        border-radius: 10px;
-        padding: 20px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        margin: 10px;
-        flex: 1 1 calc(33.333% - 40px); /* Kartların genişliğini ayarlamak için */
-        box-sizing: border-box; /* İç boşluk ve kenar boşluklarını kutu boyutuna dahil etmek için */
-        min-width: 250px; /* Kartların minimum genişliğini belirlemek için */
-        text-align: center;
-        
-
-    }
-
-    .kurucu-card {
-        width: 90%; /* Örnek genişlik ayarı */
-        margin-top: 10px;
-        background-color: #f9f9f9;
-        border: 1px solid #ddd;
-        border-radius: 10px;
-        padding: 20px;
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-        margin: 10px;
-        flex: 1 1 calc(33.333% - 40px); /* Kartların genişliğini ayarlamak için */
-        box-sizing: border-box; /* İç boşluk ve kenar boşluklarını kutu boyutuna dahil etmek için */
-        min-width: 250px; /* Kartların minimum genişliğini belirlemek için */
-        text-align: center;
-        
-        
-    }
-
-    .Kurucu {
-        display: flex;        
-        align-items: center;
-        margin-top: 10px;
-        margin-bottom: 20px;
-        grid-template-columns: 1fr 1fr;
-        margin-left: 3%;
-        margin-right: 3%;
-    }
-
-    .our-featured {
-        padding-top: 170px; /* Sayfanın üst kısmında 100 piksel boşluk bırak */
-        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .main-feautred {
-        display: flex;
-        flex-direction: column;
-        
-    }
-
-    .inner-featred {
-        flex: 0 0 1;
-        width: 380px;                
     }
 
 
@@ -981,6 +924,69 @@ nav a:hover::after
         
     }
 
+    .main-hak1  {
+        margin-top: 115px;
+    }
+    .overlay h1 {
+        font-size: 14px;
+    }
+    .overlay h2 {
+        font-size: 11px;
+    }
+    .overlay p {
+        font-size: 8px;
+    }
+
+    .main-hak2 {
+        flex-direction: column;
+        height: auto; /* Allow the container to adjust its height automatically */
+    }
+
+    .image img {
+        width: 90%;
+        height: auto;
+    }
+
+    .text-hak2 {
+        padding: 20px; /* Adjust padding for smaller screens */
+        margin-top: 20px;
+    }
+
+    .text-hak2 h1 {
+        font-size: 2.5em; /* Adjust font size for smaller screens */
+    }
+
+    .text-hak2 p {
+        font-size: 1.5em; /* Adjust font size for smaller screens */
+    }
+
+    .kurucu-card {
+        width: 90%; /* Örnek genişlik ayarı */
+        margin-top: 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        flex: 1 1 calc(33.333% - 40px); /* Kartların genişliğini ayarlamak için */
+        box-sizing: border-box; /* İç boşluk ve kenar boşluklarını kutu boyutuna dahil etmek için */
+        min-width: 250px; /* Kartların minimum genişliğini belirlemek için */
+      
+        
+        
+    }
+
+    .Kurucu {
+        display: flex;        
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    
 }
 
 
@@ -1054,59 +1060,6 @@ nav a:hover::after
 
     }
 
-    .our-services{
-        padding-top: 120px;
-    }
-    .main-inner-services {
-        grid-template-columns: repeat(1, 1fr); /* Ekran küçültüldüğünde 1 sütun oluştur */
-    }
-   
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 140px;
-    }
-
-    .about-card {
-        width: 90%; /* Örnek genişlik ayarı */
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    .kurucu-card {
-        width: 90%; /* Örnek genişlik ayarı */
-        margin-top: 10px;
-        
-    }
-
-    .Kurucu {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-
-    .our-featured {
-        padding-top: 170px; /* Sayfanın üst kısmında 100 piksel boşluk bırak */
-        
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .main-feautred {
-        display: flex;
-        flex-direction: column;
-        
-    }
-
-    .inner-featred {
-        flex: 0 0 1;
-        width: 380px;                
-    }
 
 
     .contact-form,
@@ -1191,7 +1144,94 @@ nav a:hover::after
         font-size: 30px;
         
     }
+    
+    .main-hak1  {
+        margin-top: 115px;
+       
+    }
+    .overlay h1 {
+        font-size: 14px;
+    }
+    .overlay h2 {
+        font-size: 11px;
+       
+    }
+    .overlay p {
+        
+        font-size: 8px;
+        max-width: 100%; 
+    }
 
+    .main-hak2 {
+        flex-direction: column;
+        height: auto; 
+    }
+
+    .main-hak2 img {
+        width: 80%;
+        height: auto;
+            
+    }
+
+    .text-hak2 {
+        padding: 20px; 
+        margin-top: 20px;
+    }
+
+    .text-hak2 h1 {
+        font-size: 2.5em; 
+    }
+
+    .text-hak2 p {
+        font-size: 1.5em; 
+    }
+
+    .kurucu-card {
+        width: 90%; /* Örnek genişlik ayarı */
+        margin-top: 10px;
+        
+    }
+
+    .Kurucu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+   
+
+    .main-creative{
+        padding: 4rem 5%;        
+        margin-top: 115px;
+    }
+
+    .main-creative h1{
+        font-size: 28px;
+        padding-bottom: 0.5rem;
+    }
+
+    .main-inner-creative{
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 5rem;
+    }
+
+    .inner-creative{
+        flex: 1 1 auto;
+    }
+
+    .inner-creative img{
+        width: 100%;
+        box-shadow: 0px 4px 8px #000000;
+        
+    }
+
+    .inner-creative img:hover{
+        border-radius: 25px;
+        transform: scale(1) rotate(-10deg);
+        
+    }
 
 }
   
