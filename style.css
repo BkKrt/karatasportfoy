@@ -141,7 +141,7 @@ nav a:hover::after
     
 }
 .main-inner:hover{
-    transform: translateY(-5px);
+    transform: translateY(-50px);
 }
 .why-us-heading{
     text-align: center;
@@ -172,7 +172,7 @@ nav a:hover::after
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 3px 4px black;
     margin: 10px;
     flex: 1 1 calc(33.333% - 40px); /* Kartların genişliğini ayarlamak için */
     box-sizing: border-box; /* İç boşluk ve kenar boşluklarını kutu boyutuna dahil etmek için */
@@ -270,7 +270,7 @@ nav a:hover::after
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 2px yellow;
     margin: 10px;
     flex: 1 1 calc(33.333% - 40px); 
     box-sizing: border-box; 
@@ -548,7 +548,7 @@ nav a:hover::after
     height: auto;
     object-fit: cover;
     border-radius: 25px;
-    box-shadow: 2px 4px 8px #000000;
+    box-shadow: 0px 2px 4px yellow;
 }
 
 .text-hak2 {
@@ -566,7 +566,7 @@ nav a:hover::after
 .text-hak2 h1 {
     font-size: 3.5em;
     margin-bottom: 20px;
-    color: #004d40;
+    color: yellow;
     text-align: left;
     position: relative;
     
@@ -577,7 +577,7 @@ nav a:hover::after
     display: block;
     width: 50px;
     height: 4px;
-    background-color: #004d40;
+    background-color: yellow;
     position: absolute;
     top: -20px;
     left: 0;
@@ -695,7 +695,7 @@ nav a:hover::after
 
 .main-creative{
     padding: 6rem 7%;
-    background-color: #efbb20;
+    background-color: #ffffff;
 }
 
 .main-creative h1{
@@ -725,6 +725,7 @@ nav a:hover::after
     height: 300px;
     object-fit: cover;
     border-radius: 5px;
+    box-shadow: 0px 2px 4px yellow;
 }
 
 .inner-creative img:hover{
