@@ -13,9 +13,26 @@ body {
   color: white;
   position: relative;
 }
+.mb-4 h1{
+  font-size: 2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.mb-4 p{
+  font-size: 2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+.col-12 h2{
+  color: red;
+  font-size: 1.9rem;
+  font-weight: bold;
+}
+.col-12 p{
+  font-size: 1.2rem;
+}
 
 h1 {
   font-size: 2.8rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 #tm-bg {
@@ -74,6 +91,10 @@ p {
 .tm-site-header {
   margin: 10px;
   text-align: right;
+  width: 100%;
+}
+.tm-site-header img{
+  margin-bottom: -20px;
   width: 100%;
 }
 
